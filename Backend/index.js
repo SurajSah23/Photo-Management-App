@@ -23,6 +23,7 @@ app.use(cors(corsOptions))
 
 // Routes
 app.use('/api', photoRoutes);
+console.log(process.env.MONGO_URI);
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
