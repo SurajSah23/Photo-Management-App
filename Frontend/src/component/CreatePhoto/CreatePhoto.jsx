@@ -31,7 +31,7 @@ const CreatePhoto = () => {
 
   return (
     <div>
-      <h1>Create Photo</h1>
+      <h1>Photo Management App</h1>
       <form onSubmit={handleCreatePhoto}>
         <input
           type="text"
