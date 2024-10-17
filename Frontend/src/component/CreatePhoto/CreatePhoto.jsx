@@ -12,7 +12,7 @@ const CreatePhoto = () => {
   const handleCreatePhoto = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5001/api/create/photos', {
+      const response = await axios.post('https://photo-management-app-nu.vercel.app/api/create/photos', {
         title,
         description,
         imageUrl,

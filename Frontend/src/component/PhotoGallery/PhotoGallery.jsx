@@ -11,7 +11,7 @@ const PhotoGallery = () => {
   useEffect(() => {
     const fetchPhotos = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/api/find/photos');
+        const response = await axios.get('https://photo-management-app-nu.vercel.app/api/find/photos');
         setPhotos(response.data);
       } catch (error) {
         console.error('Error fetching photos:', error);
@@ -25,7 +25,7 @@ const PhotoGallery = () => {
     console.log('Delete button clicked for photo ID:', id); // Debugging if the function is called
 
     try {
-      const response = await axios.delete(`http://localhost:5001/api/delete/by/ID/${id}`);
+      const response = await axios.delete(`https://photo-management-app-nu.vercel.app/api/delete/by/ID/${id}`);
       console.log('Delete API response:', response); // Debugging API response
       if (response.status === 200) {
         setPhotos(photos.filter(photo => photo._id !== id)); // Remove photo from state
