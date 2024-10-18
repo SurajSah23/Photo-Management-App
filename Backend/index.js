@@ -14,7 +14,9 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    // origin: 'http://localhost:5173',
+    origin: true,
+    methods: ["GET", "POST", "DELETE", "PUT"],
     optionsSuccessStatus: 200,
     credentials:true
 }
