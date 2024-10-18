@@ -6,10 +6,10 @@ function Navbar() {
     <nav>
       <ul>
         <li>
-          <Link to="/">Create Photo</Link>
+          <Link to="/">Upload Gallary Photo</Link>
         </li>
         <li>
-          <Link to="/gallery">Photo Gallery</Link>
+          <Link to="/gallery">All Gallery Photo</Link>
         </li>
       </ul>
     </nav>
